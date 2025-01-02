@@ -1,0 +1,33 @@
+import React from "react";
+
+interface Props {
+  type?: "button" | "submit";
+  disabled?: boolean;
+  className?: string;
+  onClick?: () => void;
+  title: string;
+}
+
+export default function Button({
+  type,
+  disabled,
+  className,
+  onClick,
+  title,
+}: Props) {
+  return (
+    <>
+      <button
+        type={type}
+        disabled={disabled || false}
+        onClick={onClick}
+        className={
+          "text-[#264344]  rounded-full hover:bg-gray-900 font-medium  px-4 py-1 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700" +
+          (className || "")
+        }
+      >
+        {title}
+      </button>
+    </>
+  );
+}

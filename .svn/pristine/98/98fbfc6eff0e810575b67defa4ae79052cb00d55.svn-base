@@ -1,0 +1,238 @@
+
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Image from "next/image";
+import { FaShoppingCart } from "react-icons/fa";
+import Search from "../components/form/Search";
+import Link from "next/link"
+import { AiFillStar } from "react-icons/ai";
+import { CiShare2 } from "react-icons/ci";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { FaSearch } from "react-icons/fa";
+import { AiFillCaretLeft } from "react-icons/ai";
+import { IoMdArrowDropright } from "react-icons/io";
+import { FaCaretRight } from "react-icons/fa6";
+export default async function Post() {
+
+    return (
+        <div className="flex flex-col min-h-screen">
+            <Header />
+
+            <div className="flex flex-row   ">
+
+                <div className="basis-1/2 ms-80">
+                    <h2 className="text-3xl font-bold  mt-4 text-amber-500">MY CART(2)</h2>
+
+                    <div className=" w-[800px] h-[250px] bg-white shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] p-2 mb-10 mt-4">
+
+                        <div className="flex">
+                            <div>
+                                <Link href="/">
+                                    <Image width={165} height={200} src="/wishlist.jpg" alt="wishlist-image" className="object-cover" />
+                                </Link>
+                            </div>
+                            <div className="ms-10">
+                                <h2 className=" font-medium mt-4 text-lg ">RG DesignsBlue & White Plain Cotton Kurta</h2>
+                                <span className="flex  text-gray-500 text-sm font-light">
+                                    Size:20
+
+                                </span>
+                                <div className="button"></div>
+                                <span className="flex mt-2">
+                                    <p className="text-red-600 text-sm">&#36; 185.00</p>
+                                    <span className="line-through text-sm mt-1 ms-4">220.00</span>
+                                </span>
+                                <div className="flex mt-3"> <button className=" bg-slate-300  text-black font-normal py-2 px-4 rounded-full  text-sm">
+                                    SAVE FOR LATER
+                                </button> <button className="bg-transparent ms-5 text-amber-500 font-normal  py-2 px-4 border border-amber-500 rounded-full text-sm ">
+                                        REMOVE
+                                    </button></div>
+
+                                    <div className="flex mt-2">
+                                    <div> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        QTY
+                                    </label>
+                                        <button className="border border-slate-300 hover:border-indigo-300 flex p-1 ">
+                                            <AiFillCaretLeft className="mt-1 me-2" />  <span>1</span>   <FaCaretRight className="mt-1 ms-2" /></button>
+                                    </div>
+                                    <div className=" ms-10 "> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        DELIVERY
+                                    </label>
+                                        <p className=" mt-4 text-sm font-semibold"> 3-5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className=" w-[800px] h-[250px] bg-white shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] p-2 mb-10 mt-4">
+
+                        <div className="flex">
+                            <div>
+                                <Link href="/">
+                                    <Image width={165} height={200} src="/wishlist.jpg" alt="wishlist-image" className="object-cover" />
+                                </Link>
+                            </div>
+                            <div className="ms-10">
+                                <h2 className=" font-medium mt-4 text-lg ">RG DesignsBlue & White Plain Cotton Kurta</h2>
+                                <span className="flex  text-gray-500 text-sm font-light">
+                                    Size:20
+
+                                </span>
+                                <span className="flex mt-2">
+                                    <p className="text-red-600 text-sm">&#36; 185.00</p>
+                                    <span className="line-through text-sm mt-1 ms-4">220.00</span>
+                                </span>
+                                <div className="flex mt-3"> <button className=" bg-slate-300  text-black font-normal py-2 px-4 rounded-full  text-sm">
+                                    SAVE FOR LATER
+                                </button> <button className="bg-transparent ms-5 text-amber-500 font-normal  py-2 px-4 border border-amber-500 rounded-full text-sm ">
+                                        REMOVE
+                                    </button></div>
+
+                                    <div className="flex mt-2">
+                                    <div> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        QTY
+                                    </label>
+                                        <button className="border border-slate-300 hover:border-indigo-300 flex p-1 ">
+                                            <AiFillCaretLeft className="mt-1 me-2" />  <span>1</span>   <FaCaretRight className="mt-1 ms-2" /></button>
+                                    </div>
+                                    <div className=" ms-10 "> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        DELIVERY
+                                    </label>
+                                        <p className=" mt-4 text-sm font-semibold"> 3-5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=" w-[800px] h-[250px] bg-white shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] p-2 mb-10 mt-4">
+
+                        <div className="flex">
+                            <div>
+                                <Link href="/">
+                                    <Image width={165} height={200} src="/wishlist.jpg" alt="wishlist-image" className="object-cover" />
+                                </Link>
+                            </div>
+                            <div className="ms-10">
+                                <h2 className=" font-medium mt-4 text-lg ">RG DesignsBlue & White Plain Cotton Kurta</h2>
+                                <span className="flex  text-gray-500 text-sm font-light">
+                                    Size:20
+
+                                </span>
+                                <span className="flex mt-2">
+                                    <p className="text-red-600 text-sm">&#36; 185.00</p>
+                                    <span className="line-through text-sm mt-1 ms-4">220.00</span>
+                                </span>
+                                <div className="flex mt-3"> <button className=" bg-slate-300  text-black font-normal py-2 px-4 rounded-full  text-sm">
+                                    SAVE FOR LATER
+                                </button> <button className="bg-transparent ms-5 text-amber-500 font-normal  py-2 px-4 border border-amber-500 rounded-full text-sm ">
+                                        REMOVE
+                                    </button></div>
+
+                                <div className="flex mt-2">
+                                    <div> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        QTY
+                                    </label>
+                                        <button className="border border-slate-300 hover:border-indigo-300 flex p-1 ">
+                                            <AiFillCaretLeft className="mt-1 me-2" />  <span>1</span>   <FaCaretRight className="mt-1 ms-2" /></button>
+                                    </div>
+                                    <div className=" ms-10 "> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        DELIVERY
+                                    </label>
+                                        <p className=" mt-4 text-sm font-semibold"> 3-5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=" w-[800px] h-[250px] bg-white shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] p-2 mb-10 mt-4">
+
+                        <div className="flex">
+                            <div>
+                                <Link href="/">
+                                    <Image width={165} height={200} src="/wishlist.jpg" alt="wishlist-image" className="object-cover" />
+                                </Link>
+                            </div>
+                            <div className="ms-10">
+                                <h2 className=" font-medium mt-4 text-lg ">RG DesignsBlue & White Plain Cotton Kurta</h2>
+                                <span className="flex  text-gray-500 text-sm font-light">
+                                    Size:20
+
+                                </span>
+                                <span className="flex mt-2">
+                                    <p className="text-red-600 text-sm">&#36; 185.00</p>
+                                    <span className="line-through text-sm mt-1 ms-4">220.00</span>
+                                </span>
+                                <div className="flex mt-3"> <button className=" bg-slate-300  text-black font-normal py-2 px-4 rounded-full  text-sm">
+                                    SAVE FOR LATER
+                                </button> <button className="bg-transparent ms-5 text-amber-500 font-normal  py-2 px-4 border border-amber-500 rounded-full text-sm ">
+                                        REMOVE
+                                    </button></div>
+
+                                    <div className="flex mt-2">
+                                    <div> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        QTY
+                                    </label>
+                                        <button className="border border-slate-300 hover:border-indigo-300 flex p-1 ">
+                                            <AiFillCaretLeft className="mt-1 me-2" />  <span>1</span>   <FaCaretRight className="mt-1 ms-2" /></button>
+                                    </div>
+                                    <div className=" ms-10 "> <label className="block text-gray-700 text-sm font-normal mb-2" >
+                                        DELIVERY
+                                    </label>
+                                        <p className=" mt-4 text-sm font-semibold"> 3-5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt " >
+                    <h2 className="  text-amber-400 text-sm font-bold mt-10">CONTINUE SHOPPING</h2>
+                    <div className="w-[300px]  bg-white shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]   ">
+
+                        <div className="divide-y divide-slate-200">
+                            <div className="bg-gray-400 p-2 text-black font-bold text-base">PRICING DETAILS</div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-10 text-xs">Sub Total</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-10 text-xs">Cart Discount</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-10 text-xs">Big Total</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-10 text-xs">Shipping Charge Fee</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-10 text-xs">Order Total</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="flex justify-around p-2">
+                                <div className="me-4 text-sm font-semibold">Amount Payable</div>
+                                <div className="text-xs">&#8377; 45,0000</div>
+                            </div>
+                            <div className="bg-gray-400 p-2 text-black   mt-4  justify-center text-sm font-semibold flex items-center ">PLACE ORDER</div>
+
+                        </div>
+
+                    </div>
+                    <div className="bg-white mt-10 w-[300px]">
+                        <p className="justify-center text-sm font-semibold flex items-center mt-6">Enter Youe Delivery Adress</p>
+                        <p className="justify-center text-sm font-light flex items-center mt-6">Check for delivery & COD availabilty <br></br>at your pin code</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <Footer />
+        </div>
+    );
+
+}

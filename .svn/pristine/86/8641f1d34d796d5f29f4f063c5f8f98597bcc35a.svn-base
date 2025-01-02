@@ -1,0 +1,84 @@
+import React from "react";
+import Image from "next/image";
+import Search from "./form/Search";
+import { FaSearch } from "react-icons/fa";
+import Button from "./form/Button";
+import { FcLike } from "react-icons/fc";
+import { BsFillCartFill } from "react-icons/bs";
+import { IoMdArrowDropdown } from "react-icons/io";
+import Link from "next/link";
+
+export default function Header() {
+  const options = [
+    { label: "One", value: 1 },
+    { label: "Two", value: 2 },
+    { label: "Three", value: 3, disabled: true },
+    // And so on...
+  ];
+
+  return (
+    <>
+      <div className="text-center bg-[length:315px] w-full bg-[url('/libassy_pattern.svg')]">
+        <div className=" backdrop-brightness-[0.75] bg-[#2f4f50f2] w-full">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-3 gap-4 items-center py-2">
+              <div className="">
+                <Image
+                  src="/libassy_logo.png"
+                  width={110}
+                  height={100}
+                  alt="logo"
+                  className="mx-auto"
+                />
+              </div>
+              <div className="relative">
+                <Search
+                  placeholder={"Search"}
+                  id={"search"}
+                  autocomplete={false}
+                />
+                <FaSearch className="absolute top-2 right-3 text-[#8c969b]" />
+              </div>
+              <div>
+                <div className="mb-3">
+                  <Button
+                    title={"LOGIN"}
+                    className=" bg-white text-[10px]  font-bold"
+                  />
+                  <Button
+                    title={"REGISTER"}
+                    className=" bg-[#698b98] text-white px-3 text-[12px]"
+                  />
+                </div>
+                <div className="flex justify-center items-center">
+                  <FcLike className=" inline text-[15px] mb-1" />
+                  <Link href="/wishlist" >  <span className="text-white text-[10px] uppercase font-bold ms-0 border-r-2 px-2">
+                    Wishlist(1)
+                  </span> </Link>
+                
+                <Link href="/cart">  <BsFillCartFill className=" inline text-[15px] mb-1 text-[#b88e62] ms-4" />
+                  <span className=" text-white text-[10px] uppercase font-bold ms-2">
+                    cart(1)
+                  </span></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#264344] py-3 w-full">
+        <ul className="text-white flex justify-evenly font-bold text-[14px]">
+          <li className="flex items-center">
+            Men <IoMdArrowDropdown className="ms-2" />
+          </li>
+          <li className="flex items-center">
+            Women <IoMdArrowDropdown className="ms-2" />
+          </li>
+          <li className="flex items-center">
+            Kids <IoMdArrowDropdown className="ms-2" />
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+}
